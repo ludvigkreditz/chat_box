@@ -1,11 +1,10 @@
 // Configure your import map in config/importmap.rb. Read more: https://github.com/rails/importmap-rails
+//= require jquery
+//= require semantic-ui  
+
 import "@hotwired/turbo-rails"
 import "controllers"
-//= require jquery
-//= requiere semantic-ui
 
-$(document).on('turbolinks:load', function() {
+$(document).on('turbo:load', function() {
   $('.ui.dropdown').dropdown();
 })
-
-
