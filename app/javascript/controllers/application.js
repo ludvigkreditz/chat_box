@@ -8,6 +8,4 @@ window.Stimulus   = application
 
 export { application }
 
-$(document).on('turbolinks:load', function() {
-  $('.ui.dropdown').dropdown();
-})
+
