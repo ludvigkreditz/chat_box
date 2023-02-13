@@ -3,3 +3,9 @@ import "@hotwired/turbo-rails"
 import "controllers"
 //= require jquery
 //= requiere semantic-ui
+
+$(document).on('turbolinks:load', function() {
+  $('.ui.dropdown').dropdown();
+})
+
+
