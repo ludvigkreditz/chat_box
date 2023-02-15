@@ -11,3 +11,4 @@ $(document).on('turbo:load', function() {
     $(this).closest('.message').transition('fade');
   });
 })
+import "channels"
