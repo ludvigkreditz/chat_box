@@ -1,11 +1,13 @@
 <h3 class="ui center aligned medium icon header">
   <i class="circular purple hourglass half icon"></i>
-  You need to register. 😁   <br> 
+  You need to register. 😁   
 </h3>
+
 
 <div class="ui placeholder segment">
   <div class="ui four column very relaxed stackable grid">
     <div class="column" style="margin: 0 auto;">
+      <%= render 'shared/errors' %>
       <%= form_for(:user, html: { class: "ui form" }, url:users_path) do |f| %>
         <div class="field">
           <%= f.label :username, "Username" %>
@@ -26,3 +28,4 @@
     </div>
   </div>
 </div>
+
